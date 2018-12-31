@@ -1,0 +1,32 @@
+{
+  "name": "finishfriendfinder",
+  "version": "1.0.0",
+  "description": "heroku declare app dependencies with init",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AGeoffray/Friend-Finder.git"
+  },
+  "keywords": [
+    "friends",
+    "dating",
+    "coding",
+    "app",
+    "compatible"
+  ],
+  "author": "Alyssa Geoffray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AGeoffray/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/AGeoffray/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7"
+  }
+}
