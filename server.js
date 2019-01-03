@@ -3,7 +3,7 @@
 // let k = keyUp();  // k is "KEYS";
 
 // const config = require('./config');
-let kay = config.keyUp(); // k is "KEYS" array   
+// let kay = config.keyUp(); // k is "KEYS" array   
 
 var express = require("express");
 var path = require("path");
