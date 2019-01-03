@@ -14,6 +14,12 @@ var app = express();
 
 
 //port set for heroku
+//port set for heroku
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
 // var PORT = process.env.PORT || 8080;
 
 //here we connect to mysql so we can manipulate the db 'friend_finder'
