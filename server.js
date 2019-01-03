@@ -15,11 +15,11 @@ var app = express();
 
 //port set for heroku
 //port set for heroku
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
-app.listen(port);
+const PORT = process.env.PORT || "8080";
+// if (port == null || port == "") {
+//   port = 8000;
+// }
+// app.listen(port);
 // var PORT = process.env.PORT || 8080;
 
 //here we connect to mysql so we can manipulate the db 'friend_finder'
@@ -219,7 +219,7 @@ secondUserPic+"' height='300px'><br><a href='/allFriends.html' id='serverbtn'>Ba
 })
 })
 
-app.listen(3040, function(){
+app.listen(PORT, function(){
     console.log("Ready on port 3040");
 })
 
