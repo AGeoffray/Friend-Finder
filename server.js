@@ -2,7 +2,7 @@
 // import { keyUp } from './config';
 // let k = keyUp();  // k is "KEYS";
 
-const config = require('./config');
+// const config = require('./config');
 let kay = config.keyUp(); // k is "KEYS" array   
 
 var express = require("express");
@@ -11,15 +11,18 @@ var mysql = require("mysql");
 var app = express();
 
 
+
+
 //port set for heroku
 // var PORT = process.env.PORT || 8080;
 
 //here we connect to mysql so we can manipulate the db 'friend_finder'
+
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: kay.sqlKey,
+    password: "Sql506087",
     database: "friend_finder"
 });
 
